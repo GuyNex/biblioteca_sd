@@ -1,0 +1,29 @@
+<%@book.each do |livro|%>
+<div class="tudo">
+  <div class="row py-4 px-1">
+    <div class="col-md-7 mx-auto">
+      <div class="bg-white shadow rounded overflow-hidden">
+        <div class="px-4 pt-4 pb-4 cover">
+          <div class="media align-items-end profile-head ">
+            <div class="profile mr-3 " >
+              <%if livro.photo.attached? %>
+                <%= image_tag livro.photo, :class => "img-thumbnail", :atl => "Avatar", width: 200%>
+              <% else %>
+                <img class="poster_size" alt="Poster" src="https://closekids.com.br/wp-content/uploads/2016/10/default-placeholder.png" width="200px" height="200px">
+              <% end %>
+            </div>
+            <div class="media-body mb-0 text-white">
+              <br><h4 class="mt-0 mb-0"><%=livro.title%></h4><br>
+            </div>
+          </div>
+        </div>
+        <div class="bg-light p-4 d-flex justify-content text-center">
+          <ul class="list-inline mb-0">
+            <a class="btn btn-outline-dark btn-sm btn-block" <%= link_to 'Mostrar mais', book_path(livro.id) %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>

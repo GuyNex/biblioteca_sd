@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap";
+
+body {
+  background-image: url('bom_dia.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}

@@ -1,0 +1,47 @@
+<%= form_with model: @book do |livro|%>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-xl-9 mx-auto">
+        <div class="card card-signin flex-row my-5">
+          <div class="card-img-left d-none d-md-flex">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Adicionar </h5>
+            <form class="form-signin">
+              <div class="form-label-group">
+                <input type="text" placeholder="Título" class="form-control" <%= livro.text_field :title, value: @book.title %> <br>
+              </div>
+
+              <div class="form-label-group">
+                <input type="text" placeholder="Autor" class="form-control" <%= livro.text_field :author, value: @book.author %>
+              </div>
+
+              <hr>
+
+              <div class="form-label-group">
+                <input type="date" placeholder="Data de Publicação" class="form-control" <%= livro.date_field :date, value: @book.date %><br>
+              </div>
+
+              <div class="form-label-group">
+                <input type="text" placeholder="Descrição" class="form-control" <%= livro.text_area :description, value: @book.description%><br>
+              </div>
+
+              <a>Adicionar Capa</a>
+              <div class="form-label-group">
+                <input type="file" placeholder="#" class="form-control" <%= livro.file_field :photo, value: @book.photo%><br>
+              </div>
+
+              <div class="form-label-group">
+                <a>Adicionar Arquivo</a>
+                <input type="file" placeholder="PDF" class="form-control" <%= livro.file_field :file, value: @book.file%>
+              </div><br>
+
+              <button class="btn btn-dark btn-primary btn-block text-uppercase" type="submit">Adicionar</button>
+              <hr class="my-4">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>>
