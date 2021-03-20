@@ -62,6 +62,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'stripe'
 gem 'pdfjs_viewer-rails'
-gem 'poppler'
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
