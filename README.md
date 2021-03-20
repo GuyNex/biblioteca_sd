@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Observações sobre o projeto:
 
-Things you may want to cover:
+É possível adicionar livros, visualizar suas informações e ler o arquivo PDF.
 
-* Ruby version
+Para adicionar, basta clicar no '+' na navbar, para visualizar os livros adcionados clique no livro também na navbar, o botão 'BIBLIOTECA-SD' retorna a homepage.
 
-* System dependencies
+Originalmente um sistema de organização dos livros por meio de categorias e tags seria adicionado por meio de tabelas associativas, por restrições de tempo decidi não implementar.
 
-* Configuration
+Experienciei problemas ao fazer deploy para o Heroku, no final certo mas por algum motivo desconhecido, o heroku se recusa a renderizar um asset do background, segue imagens de como é localmente: https://drive.google.com/drive/folders/1lbrXymA3WgP_cwnA5_LNFSfu4VJauugt?usp=sharing
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+link do deploy: https://enigmatic-hollows-33517.herokuapp.com/
